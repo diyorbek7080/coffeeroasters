@@ -1,1 +1,51 @@
-//footer
+.footer {
+
+    &__container {
+        width: 1280px;
+        background-color:  #2C343E;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__the-end {
+       display: flex;
+
+
+    }
+
+    &__site-the {
+       text-decoration: none;
+       list-style: none;
+       display: flex;
+
+    }
+
+       &__link-the-end {
+       margin: 0;
+       margin-left: 15px;
+       text-decoration: none;
+       display: flex;
+       color: white;
+       font-family: 'Barlow';
+       font-weight: bold;
+       font-size: 12px;
+       line-height: 15px;
+       letter-spacing: 0.923077px;
+       text-transform: uppercase;
+       color: #83888F;
+
+}
+    &__photo-the-end {
+
+
+    }
+    &__pic-end {
+
+       margin-left: 20px;
+
+}
+
+
+}

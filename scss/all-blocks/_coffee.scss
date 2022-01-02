@@ -1,0 +1,77 @@
+.coffee {
+
+    &__container {
+            width: 100%;
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 0 20px;
+            margin-bottom: 300px;
+
+    }
+
+    &__we {
+        font-family: 'Fraunces 9pt';
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+    }
+
+    &__pick {
+        width: 760px;
+        margin-bottom: 1000px;
+        display: flex;
+        justify-content: space-between;
+        background-image: url(../images/path-2.png);
+        background-repeat: no-repeat;
+        background-position-y: 15px;
+        margin-bottom: 82px;
+     }
+
+     &__your {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+
+     }
+
+
+     &__pic-end {
+        margin-bottom: 38px;
+       }
+
+       &__your-list {
+       list-style: none;
+       }
+
+
+        &__enjoy {
+            margin: 0;
+            padding: 0;
+            width: 255px;
+            margin-bottom: 42px;
+            font-family: 'Fraunces 9pt';
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 36px;
+            color: #333D4B;
+
+
+        }
+
+        &__fair {
+            margin: 0;
+            padding: 0;
+            width: 285px;
+            font-family: 'Barlow';
+            font-size: 16px;
+            line-height: 26px;
+            color: #333D4B;
+
+        }
+
+
+}

@@ -1,14 +1,26 @@
 .button {
   padding: 0;
-  font-family: 'Fraunces 9pt';
+}
+.card__button {
+  text-decoration: none;
   font-weight: 900;
   font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  color: #FEFCF7;
+  position: absolute;
   background: #66D2CF;
   border-radius: 6px;
+  border: transparent;
+  color: white;
+  padding: 20px 40px;
 
 
+}
 
+.card__button:hover{
+  opacity: 0.8;
+  background-color: dodgerblue;
+}
+
+.card__button:active {
+  opacity: 0.6;
+  color: #66D2CF;
 }
