@@ -1,13 +1,13 @@
 .footer {
 
-    &__container {
+     &__site {
         width: 1280px;
         background-color:  #2C343E;
         padding: 50px 100px;
         display: flex;
         justify-content: space-between;
+      }
 
-    }
 
     &__the-end {
        display: flex;

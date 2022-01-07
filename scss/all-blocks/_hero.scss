@@ -1,14 +1,16 @@
 .hero {
 
-    &__container {
+    &__site {
         width: 1280px;
         height: 600px;
         padding: 117px 702px 107px 85px;
         border-radius: 10px;
-        background-image: url(../../images/hero-coffee.png);
+        background-image: url("../images/hero-coffee.png");
         background-repeat: no-repeat;
         margin-bottom: 136px;
+
     }
+
 
     &__heading {
         margin: 0;
