@@ -11,8 +11,6 @@
 
     &__the-end {
        display: flex;
-
-
     }
 
     &__site-the {
@@ -42,7 +40,29 @@
 
        margin-left: 20px;
 
-}
+   }
+
+   &__item {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+
+
+   &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+   }
+
+   &__link {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      margin: 24px;
+   }
 
 
 }
