@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;1,500&family=Fraunces:ital,wght@0,900;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Fraunces:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Coffeeroasters</title>
 </head>
@@ -21,12 +19,12 @@
         <div class="container header__container">
 
             <div class="header__site">
-                <img class="header__img" src="images/coffee.png" alt="#">
+                <a href=""><img class="header__img" src="images/coffee.png" width="236" height="26" alt="#"></a>
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__list-item"><a class="header__link" href="#">HOME</a></li>
-                        <li class="header__list-item"><a class="header__link" href="about.html">ABOUT US</a></li>
-                        <li class="header__list-item"><a class="header__link" href="#">CREATE YOUR PLAN</a></li>
+                        <li class="header__item"><a class="header__link" href="#">HOME</a></li>
+                        <li class="header__item"><a class="header__link" href="about.html">ABOUT US</a></li>
+                        <li class="header__item"><a class="header__link" href="#">CREATE YOUR PLAN</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,46 +33,49 @@
     </header>
     <!-- MAIN -->
     <main>
-        <div class="container hero__container">
-            <div class="hero__site">
-                <div class="hero__coffee">
-                    <h1 class="hero__heading">Great coffee made simple.</h1>
-                    <p class="hero__desc">Start your mornings with the world’s best coffees. Try our expertly curated
-                        artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-                    <button class="card__button">Create your plan</button>
-
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__site">
+                    <div class="hero__coffee">
+                        <h1 class="hero__heading">Great coffee made simple.</h1>
+                        <p class="hero__desc">Start your mornings with the world’s best coffees. Try our expertly
+                            curated
+                            artisan coffees from our best roasters delivered directly to your door, at your schedule.
+                        </p>
+                        <button class="button">Create your plan</button>
+                    </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
+        </section>
         <!-- SECTION -->
-        <section>
+        <section class="collection">
             <div class="collection">
                 <div class="container collection__container">
                     <div class="collection__site">
                         <ul class="collection__list">
                             <li class="collection__milk">
                                 <img class="collection__img" src="images/coffee-milk.png" alt="#">
-                                <h3 class="collecion__heading">Gran Espresso</h3>
+                                <h3 class="collection__heading">Gran Espresso</h3>
                                 <p class="collection__desc">Light and flavorful blend with cocoa and black pepper for an
                                     intense experience</p>
                             </li>
                             <li class="collection__milk">
                                 <img class="collection__img" src="images/coffee-milk.png" alt="#">
-                                <h3 class="collecion__heading">Planalto</h3>
+                                <h3 class="collection__heading">Planalto</h3>
                                 <p class="collection__desc">Brazilian dark roast with rich and velvety body, and hints
                                     of
                                     fruits and nuts</p>
                             </li>
                             <li class="collection__milk">
                                 <img class="collection__img" src="images/coffee-milk.png" alt="#">
-                                <h3 class="collecion__heading">Piccollo</h3>
+                                <h3 class="collection__heading">Piccollo</h3>
                                 <p class="collection__desc">Mild and smooth blend featuring notes of toasted almond and
                                     dried cherry </p>
                             </li>
                             <li class="collection__milk">
                                 <img class="collection__img" src="images/coffee-milk.png" alt="#">
-                                <h3 class="collecion__heading">Danche</h3>
+                                <h3 class="collection__heading">Danche</h3>
                                 <p class="collection__desc">Ethiopian hand-harvested blend densely packed with vibrant
                                     fruit
                                     notes</p>
@@ -86,7 +87,7 @@
             </div>
         </section>
         <!-- SECTION -->
-        <section>
+        <section class="choose">
             <div class="container choose__container">
                 <div class="choose__site">
                     <div class="choose__why">
@@ -122,7 +123,7 @@
             </div>
         </section>
         <!-- SECTION -->
-        <section>
+        <section class="coffee">
             <div class="coffee">
                 <div class="container coffee__container">
                     <h3 class="coffee__we">How it works</h3>
@@ -155,7 +156,7 @@
                         </li>
 
                     </ul>
-                    <button class="card__button">Create your plan</button>
+                    <button class="button">Create your plan</button>
 
                 </div>
             </div>
@@ -165,39 +166,31 @@
 
     </main>
     <!-- FOTTER -->
-    <footer>
-        <div class="container footer__container">
+
+
+    <footer class="footer">
+        <div class="container">
             <div class="footer__site">
-                <div class="footer__the-end">
-                    <img class="footer__site-the-end-pic " src="images/footer-coffee.png" width="300" height="50"
-                        alt="#">
-                    <ul class="footer__site-the">
-                        <li><a class="footer__link-the-end" href="#">HOME</a></li>
-                        <li><a class="footer__link-the-end" href="#">ABOUT US</a></li>
-                        <li><a class="footer__link-the-end" href="#">Create your plan</a></li>
-                    </ul>
-                </div>
-                <div class="footer__photo-the-end">
+                <div class="footer__end">
+                    <a class="footer__pic-link" href="#"><img src="images/footer-coffee.png" width="236" height="26"
+                            alt="#"></a>
                     <ul class="footer__list">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#"> <img src="images/facebook.png" alt="#"></a>
-                        </li>
-                        <li class="footer__ltem">
-                            <a class="footer__link" href="#"> <img src="images/twitter.png" alt="#"></a>
-                        </li>
-                        <li class="footer__ltem">
-                            <a class="footer__link" href="#"> <img src="images/instagram.png" alt="#"></a>
-                        </li>
+                        <li class="fotter__item"><a class="footer__link" href="#">HOME</a></li>
+                        <li class="fotter__item"><a class="footer__link" href="#">ABOUT US</a></li>
+                        <li class="fotter__item"><a class="footer__link" href="#">Create your plan</a></li>
                     </ul>
-
                 </div>
 
-
+                    <div class="footer__right">
+                        <a class="fotter__icon" href="#"><img class="footer__picture" src="images/facebook.png" width="24" height="24" alt="#">
+                        </a>
+                        <a class="fotter__icon" href="#"><img class="footer__picture" src="images/twitter.png" width="24" height="24" alt="#">
+                        </a>
+                        <a class="fotter__icon" href="#"><img class="footer__picture" src="images/instagram.png" width="24" height="24" alt="#">
+                        </a>
+                    </div>
             </div>
         </div>
-
-
-
     </footer>
 </body>
 

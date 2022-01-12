@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Fraunces:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>about</title>
 </head>
 
 <body>
@@ -14,12 +17,12 @@
     <header class="header">
         <div class="container header__container">
             <div class="header__site">
-                <img class="header__img" src="images/coffee.png" alt="#">
+                <a href=""><img class="header__img" src="images/coffee.png" width="236" height="26" alt="#"></a>
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__list-item"><a class="header__link" href="index.html">HOME</a></li>
-                        <li class="header__list-item"><a class="header__link" href="#">ABOUT US</a></li>
-                        <li class="header__list-item"><a class="header__link" href="#">CREATE YOUR PLAN</a></li>
+                        <li class="header__item"><a class="header__link" href="index.html">HOME</a></li>
+                        <li class="header__item"><a class="header__link" href="#">ABOUT US</a></li>
+                        <li class="header__item"><a class="header__link" href="#">CREATE YOUR PLAN</a></li>
                     </ul>
                 </nav>
             </div>
@@ -28,17 +31,20 @@
     </header>
     <!-- MAIN -->
     <main>
-        <div class="container hero__container">
-            <div class="hero__site about-hero">
-                <div class="hero__coffee">
-                    <h1 class="hero__heading">About Us</h1>
-                    <p class="hero__desc">Coffeeroasters began its journey of exotic discovery in 1999, highlighting
-                        stories of coffee from around the world. We have since been dedicated to bring the perfect cup -
-                        from bean to brew - in every shipment.</p>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__site about-hero">
+                    <div class="hero__coffee">
+                        <h1 class="hero__heading">About Us</h1>
+                        <p class="hero__desc">Coffeeroasters began its journey of exotic discovery in 1999, highlighting
+                            stories of coffee from around the world. We have since been dedicated to bring the perfect
+                            cup -
+                            from bean to brew - in every shipment.</p>
+                    </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
+        </section>
         <!-- SECTION -->
         <section>
             <div class="commitment">
@@ -87,9 +93,9 @@
             </div>
         </section>
         <!-- SECTION -->
-        <section>
+        <section class="country">
             <div class="container">
-                <div class="country country__container">
+                <div class=" country__container">
                     <p class="country__our">Our headquarters</p>
                     <ul class="country__item">
                         <li class="country__item-list">
@@ -123,37 +129,31 @@
         </section>
     </main>
     <!-- FOTTER -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer__site">
-                <div class="footer__the-end">
-                    <img class="footer__site-the-end-pic " src="images/footer-coffee.png" width="300" height="50"
-                        alt="#">
-                    <ul class="footer__site-the">
-                        <li><a class="footer__link-the-end" href="#">HOME</a></li>
-                        <li><a class="footer__link-the-end" href="#">ABOUT US</a></li>
-                        <li><a class="footer__link-the-end" href="#">Create your plan</a></li>
-                    </ul>
-                </div>
-                <div class="footer__photo-the-end">
+                <div class="footer__end">
+                    <a class="footer__pic-link" href="#"><img src="images/footer-coffee.png" width="236" height="26"
+                            alt="#"></a>
                     <ul class="footer__list">
-                        <li class="footer__item">
-                            <a class="footer__link" href="#"> <img src="images/facebook.png" alt="#"></a>
-                        </li>
-                        <li class="footer__ltem">
-                            <a class="footer__link" href="#"> <img src="images/twitter.png" alt="#"></a>
-                        </li>
-                        <li class="footer__ltem">
-                            <a class="footer__link" href="#"> <img src="images/instagram.png" alt="#"></a>
-                        </li>
+                        <li class="fotter__item"><a class="footer__link" href="#">HOME</a></li>
+                        <li class="fotter__item"><a class="footer__link" href="#">ABOUT US</a></li>
+                        <li class="fotter__item"><a class="footer__link" href="#">Create your plan</a></li>
                     </ul>
-
                 </div>
 
-
+                    <div class="footer__right">
+                        <a class="fotter__icon" href="#"><img class="footer__picture" src="images/facebook.png" width="24" height="24" alt="#">
+                        </a>
+                        <a class="fotter__icon" href="#"><img class="footer__picture" src="images/twitter.png" width="24" height="24" alt="#">
+                        </a>
+                        <a class="fotter__icon" href="#"><img class="footer__picture" src="images/instagram.png" width="24" height="24" alt="#">
+                        </a>
+                    </div>
             </div>
         </div>
     </footer>
+
 
 
 

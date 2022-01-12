@@ -11,13 +11,14 @@
         height: 26px;
     }
 
-    &__list {
+    &__item {
         margin: 0;
         padding: 0;
         display: flex;
+        justify-content: space-between;
     }
 
-    &__list-item {
+    &__list {
         margin: 0;
         padding: 0;
         list-style: none;
