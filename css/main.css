@@ -510,7 +510,7 @@ img {
   height: 600px;
   padding: 117px 702px 107px 85px;
   border-radius: 10px;
-  background-image: url("../images/hero-coffee.png");
+  background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
   margin-bottom: 136px;
 }
@@ -783,6 +783,7 @@ img {
   width: 445px;
   height: 520px;
   margin-right: 125px;
+  border-radius: 10px;
 }
 
 .commitment__coffee {
