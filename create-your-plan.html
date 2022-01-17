@@ -1,29 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Fraunces:wght@900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>
+
 <body>
-      <!-- HEADER -->
+    <!-- HEADER -->
     <header class="header">
         <div class="container header__container">
             <div class="header__site">
-                <a href=""><img class="header__img" src="./images/coffeeroasters.svg" width="236" height="26" alt="#"></a>
+                <a href=""><img class="header__img" src="./images/coffeeroasters.svg" width="236" height="26"
+                        alt="#"></a>
                 <nav class="header__navbar">
                     <ul class="header__list">
-                        <li class="header__item"><a class="header__link" href="#">HOME</a></li>
+                        <li class="header__item"><a class="header__link" href="index.html">HOME</a></li>
                         <li class="header__item"><a class="header__link" href="about.html">ABOUT US</a></li>
-                        <li class="header__item"><a class="header__link" href="#">CREATE YOUR PLAN</a></li>
+                        <li class="header__item"><a class="header__link" href="create-your-plan.html">CREATE YOUR PLAN</a></li>
                     </ul>
                 </nav>
             </div>
-
         </div>
     </header>
+    <!-- MAIN -->
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__site about-hero create-hero">
+                    <div class="hero__coffee">
+                        <h1 class="hero__heading">Create plan</h1>
+                        <p class="hero__desc">Coffee the way you wanted it to be. For coffee delivered tomorrow, or next
+                            week. For whatever brew method you use. For choice, for convenience, for quality.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- SECTION -->
+
+        <section class="coffee  using">
+            <div class="coffee">
+
+
+                <div class="container coffee__container">
+                    <div class="coffee__pick">
+                        <img src="images/Oval.png" alt="#">
+                        <img src="images/Oval.png" alt="#">
+                        <img src="images/Oval.png" alt="#">
+                    </div>
+                    <ul class="coffee__your">
+                        <li class="coffee__your-list">
+                            <img class="coffee__pic-end" src="./images/photo-01.png" width="90" height="72" alt="#" srcset="./images/photo-01.png 1x, ./images/photo-01@2.png 2x">
+                            <h3 class="coffee__enjoy using__color">Pick your <br> coffee</h3>
+                            <p class="coffee__fair using__to">Select from our evolving range of artisan coffees. Our beans are
+                                ethically sourced and we pay fair prices for them. There are new coffees in all
+                                profiles every month for you to try out.</p>
+                        </li>
+                        <li class="coffee__your-list">
+                            <img class="coffee__pic-end" src="./images/photo-02.png" width="90" height="72" alt="#" srcset="./images/photo-02.png 1x, ./images/photo-02@2.png 2x">
+                            <h3 class="coffee__enjoy using__color">Choose the frequency</h3>
+                            <p class="coffee__fair using__to">Customize your order frequency, quantity, even your roast style and
+                                grind type. Pause, skip or cancel your subscription with no commitment through our
+                                online portal.</p>
+                        </li>
+                        <li class="coffee__your-list">
+                            <img class="coffee__pic-end" src="images/photo-03.png" width="90" height="72" alt="#">
+                            <h3 class="coffee__enjoy using__color">Receive and enjoy!</h3>
+                            <p class="coffee__fair using__to">We ship your package within 48 hours, freshly roasted. Sit back and
+                                enjoy award-winning world-class coffees curated to provide a distinct tasting
+                                experience.</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION -->
+
+        <section class="order-section">
+            <div class="container order-section__container">
+                <div class="order">
+                    <div class="order-left">
+                        <div class="order-left__hero">
+                            <p class="order-left__number">01</p>
+                            <p class="order-left__desc">Preferences</p>
+                        </div>
+                        <span class="order-left__line"></span>
+                        <div class="order-left__hero">
+                            <p class="order-left__number">02</p>
+                            <p class="order-left__desc">Bean Type</p>
+                        </div>
+                        <span class="order-left__line"></span>
+                        <div class="order-left__hero">
+                            <p class="order-left__number">03</p>
+                            <p class="order-left__desc">Quantity</p>
+                        </div>
+                        <span class="order-left__line"></span>
+                        <div class="order-left__hero">
+                            <p class="order-left__number">04</p>
+                            <p class="order-left__desc">Grind Option</p>
+                        </div>
+                        <span class="order-left__line"></span>
+                        <div class="order-left__hero">
+                            <p class="order-left__number">05</p>
+                            <p class="order-left__desc">Deliveries</p>
+                        </div>
+                    </div>
+
+                    <div class="order-right">
+                        <div class="order-right__coffee">
+                            <div class="order-right__heading">
+                                <h3 class="order-right__heading">How do you drink your coffee?</h3>
+                                <img src="./images/path-bottom.png" alt="#">
+                            </div>
+                            <form action="http://echo.htmlacademy.ru/" method="post">
+                                <label>
+                                    <input class="visually-hidden order-right__color" type="radio" name="drink__coffee" value="capsule">
+                                    <span class="order-right__card">
+                                        <strong class="order-right__title">Capsule</strong>
+                                        <p class="order-right__text">Compatible with Nespresso systems and similar
+                                            brewers</p>
+                                    </span>
+                                </label>
+                                <label>
+                                    <input class="visually-hidden order-right__color" type="radio" name="drink__coffee" value="capsule">
+                                    <span class="order-right__card">
+                                        <strong class="order-right__title">Filter</strong>
+                                        <p class="order-right__text">Compatible with Nespresso systems and similar
+                                            brewers</p>
+                                    </span>
+                                </label>
+                                <label>
+                                    <input class="visually-hidden order-right__color" type="radio" name="drink__coffee" value="capsule">
+                                    <span class="order-right__card">
+                                        <strong class="order-right__title">Espresso</strong>
+                                        <p class="order-right__text">Compatible with Nespresso systems and similar
+                                            brewers</p>
+                                    </span>
+                                </label>
+                            </form>
+                            <div class="order-right__heading">
+                                <h3>How do you drink your coffee?</h3>
+                                <img src="./images/path-2.svg" alt="#">
+                            </div>
+                            <div class="order-right__heading">
+                                <h3>How do you drink your coffee?</h3>
+                                <img src="./images/path-2.svg" alt="#">
+                            </div>
+                            <div class="order-right__heading">
+                                <h3>How do you drink your coffee?</h3>
+                                <img src="./images/path-2.svg" alt="#">
+                            </div>
+                            <div class="order-right__heading">
+                                <h3>How do you drink your coffee?</h3>
+                                <img src="./images/path-2.svg" alt="#">
+                            </div>
+
+                        </div>
+
+                        <div class="order-right__bottom">
+                            <h4 class="order-right__bottom-heading">Order Summary</h4>
+                            <p class="order-right__bottom-desc">“I drink my coffee using" <span class="order-right__bottom-text">Capsuld</span>
+                            ,with a <span class="order-right__bottom-text">_____</span><br> type of bean
+                            <span class="order-right__bottom-text">_____</span>,sent to me
+                            <span class="order-right__bottom-text">_____</span>."</p>
+
+
+
+                        </div>
+
+
+
+                        <button class="button  open">Create your plan</button>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOTTER -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__site">
+                <div class="footer__end">
+                    <a class="footer__pic-link" href="#"><img src="./images/coffee-footer.svg" width="236" height="26"
+                            alt="#"></a>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a class="footer__link" href="#">HOME</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">ABOUT US</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">Create your plan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__right">
+                    <a class="footer__icon" href="#"><img class="footer__picture" src="./images/facebook.svg" width="24"
+                            height="24" alt="#">
+                    </a>
+                    <a class="footer__icon" href="#"><img class="footer__picture" src="./images/twitter.svg" width="24"
+                            height="24" alt="#">
+                    </a>
+                    <a class="footer__icon" href="#"><img class="footer__picture" src="./images/instagram.svg" width="24"
+                            height="24" alt="#">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
 </body>
+
 </html>
