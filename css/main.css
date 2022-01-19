@@ -489,7 +489,7 @@ img {
 }
 
 .header__site {
-  padding-top: 45px;
+  padding: 40px 0;
   margin-bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,6 +497,12 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header__img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: transparent;
 }
 
 .header__list {
@@ -525,6 +531,41 @@ img {
   color: #83888F;
 }
 
+.header__hamburger {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 20PX;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    position: relative;
+    z-index: 1;
+  }
+  .header--opner .header__list {
+    display: block;
+  }
+  .header__list {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    right: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+    top: 100px;
+  }
+  .header__hamburger {
+    display: block;
+  }
+}
+
 .hero__site {
   width: 1280px;
   height: 600px;
@@ -536,14 +577,14 @@ img {
 }
 
 .hero__coffee {
-  width: 493px;
+  width: 445px;
 }
 
 .hero__heading {
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
-  font-family: 'Fraunces 9pt';
+  margin-bottom: 24px;
+  font-family: 'Fraunces 9pt san, serif';
   font-weight: 900;
   font-size: 72px;
   line-height: 72px;
@@ -553,13 +594,108 @@ img {
 .hero__desc {
   margin: 0;
   padding: 0;
-  width: 443px;
   margin-bottom: 56px;
   font-family: 'Barlow';
   font-size: 16px;
   line-height: 26px;
   color: #FEFCF7;
-  opacity: 0.8;
+}
+
+@media only screen and (max-width: 950px) {
+  .about-hero {
+    background-position: center;
+    width: 100%;
+    max-width: 639px;
+  }
+  .hero__coffee {
+    width: 445px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .about-hero {
+    width: 800px;
+    max-width: 100%;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .about-hero {
+    background-position: center;
+    width: 100%;
+    max-width: 700px;
+  }
+  .hero__coffee {
+    width: 445px;
+  }
+  .hero__coffee {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-hero {
+    width: 800%;
+    max-width: 700px;
+  }
+  .hero__coffee {
+    width: 445px;
+  }
+  .hero__heading {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .hero__desc {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .hero__coffee {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about-hero {
+    background-position: center;
+    width: 90%;
+    max-width: 700px;
+  }
+  .hero__coffee {
+    width: 445px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .about-hero {
+    background-position: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  .hero__coffee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 279px;
+    margin: 0 auto;
+  }
+  .hero__heading {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .hero__coffee {
+    width: 279px;
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 
 .collection__container {
@@ -772,7 +908,7 @@ img {
   padding: 0;
   width: 255px;
   margin-bottom: 42px;
-  font-family: 'Fraunces 9pt';
+  font-family: 'Fraunces', serif;
   font-weight: 900;
   font-size: 32px;
   line-height: 36px;
@@ -790,6 +926,8 @@ img {
 }
 
 .about-hero {
+  width: 100%;
+  max-width: 1280px;
   background-image: url("../images/about-hero-img.png");
   background-repeat: no-repeat;
 }
@@ -809,10 +947,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 135px;
+}
+
+.commitment__simple {
+  width: 540px;
 }
 
 .commitment__heading {
@@ -829,12 +968,133 @@ img {
 .commitment__desc {
   margin: 0;
   padding: 0;
-  width: 540px;
   font-family: 'Barlow';
   font-size: 16px;
   line-height: 26px;
   color: #333D4B;
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 905px) {
+  .commitment__simple {
+    width: 450px;
+  }
+  .commitment__coffee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .commitment__picture {
+    max-width: 100%;
+    width: 400px;
+    height: 600px;
+    margin-right: 100px;
+  }
+  .commitment__heading {
+    margin-bottom: 32px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .commitment__desc {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 805px) {
+  .commitment__simple {
+    width: 300px;
+  }
+  .commitment__picture {
+    max-width: 100%;
+    width: 300px;
+    height: 500px;
+    margin-right: 80px;
+  }
+  .commitment__heading {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .commitment__desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 656px) {
+  .commitment__simple {
+    width: 250px;
+  }
+  .commitment__picture {
+    max-width: 100%;
+    width: 250px;
+    height: 450px;
+    margin-right: 60px;
+  }
+  .commitment__heading {
+    margin-bottom: 32px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .commitment__desc {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .commitment__simple {
+    width: 240px;
+  }
+  .commitment__coffee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .commitment__picture {
+    max-width: 100%;
+    width: 250px;
+    height: 450px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+  .commitment__heading {
+    margin-bottom: 32px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .commitment__desc {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .commitment__simple {
+    text-align: center;
+    width: 220px;
+  }
+  .commitment__picture {
+    max-width: 100%;
+    width: 250px;
+    height: 450px;
+    margin-right: 50px;
+  }
+  .commitment__heading {
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .commitment__desc {
+    font-size: 10px;
+    line-height: 20px;
+  }
 }
 
 .quality__close {

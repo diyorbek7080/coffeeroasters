@@ -13,8 +13,12 @@
 
     &__coffee {
         display: flex;
-        justify-content: space-between;
         margin-bottom: 135px;
+    }
+
+    &__simple {
+        width: 540px;
+
     }
 
 
@@ -36,11 +40,198 @@
     &__desc {
         margin: 0;
         padding: 0;
-        width: 540px;
-        font-family: 'Barlow';font-size: 16px;
+        font-family: 'Barlow';
+        font-size: 16px;
         line-height: 26px;
         color: #333D4B;
         opacity: 0.8;
 
     }
+}
+
+@media only screen and (max-width:905px) {
+
+    .commitment {
+        &__simple {
+            width: 450px;
+
+        }
+
+        &__coffee {
+            display: flex;
+        }
+
+        &__picture {
+            max-width: 100%;
+            width: 400px;
+            height: 600px;
+            margin-right: 100px;
+        }
+
+
+        &__heading {
+            margin-bottom: 32px;
+            font-size: 38px;
+            line-height: 46px;
+
+
+
+        }
+
+        &__desc {
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+
+    }
+
+}
+
+@media only screen and (max-width:805px) {
+
+    .commitment {
+        &__simple {
+            width: 300px;
+
+        }
+
+        &__picture {
+            max-width: 100%;
+            width: 300px;
+            height: 500px;
+            margin-right: 80px;
+        }
+
+
+        &__heading {
+            margin-bottom: 32px;
+            font-size: 32px;
+            line-height: 44px;
+
+
+
+        }
+
+        &__desc {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+
+    }
+
+}
+
+@media only screen and (max-width:656px) {
+
+    .commitment {
+        &__simple {
+            width: 250px;
+
+        }
+
+        &__picture {
+            max-width: 100%;
+            width: 250px;
+            height: 450px;
+            margin-right: 60px;
+        }
+
+
+        &__heading {
+            margin-bottom: 32px;
+            font-size: 30px;
+            line-height: 42px;
+
+
+
+        }
+
+        &__desc {
+            font-size: 12px;
+            line-height: 22px;
+        }
+
+
+    }
+
+}
+
+@media only screen and (max-width:568px) {
+
+    .commitment {
+        &__simple {
+            width: 240px;
+
+        }
+
+        &__coffee {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        &__picture {
+            max-width: 100%;
+            width: 250px;
+            height: 450px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+        }
+
+
+        &__heading {
+            margin-bottom: 32px;
+            font-size: 30px;
+            line-height: 42px;
+
+
+
+        }
+
+        &__desc {
+            font-size: 12px;
+            line-height: 22px;
+        }
+
+
+    }
+
+}
+
+@media only screen and (max-width:320px) {
+
+    .commitment {
+        &__simple {
+            text-align: center;
+            width: 220px;
+
+        }
+
+        &__picture {
+            max-width: 100%;
+            width: 250px;
+            height: 450px;
+            margin-right: 50px;
+        }
+
+
+        &__heading {
+            margin-bottom: 32px;
+            font-size: 28px;
+            line-height: 40px;
+
+
+
+        }
+
+        &__desc {
+            font-size: 10px;
+            line-height: 20px;
+        }
+
+
+    }
+
 }

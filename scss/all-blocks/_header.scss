@@ -2,11 +2,16 @@
 .header {
 
     &__site {
-        padding-top: 45px;
+        padding: 40px 0;
         margin-bottom: 48px;
         display: flex;
         justify-content: space-between;
 
+    }
+
+    &__img {
+        flex-shrink: 0;
+        color: transparent;
     }
 
     &__list {
@@ -35,6 +40,47 @@
 
 
     }
+
+    &__hamburger {
+        display: none;
+        background-color: transparent;
+        border: none;
+        font-size: 20PX;
+
+    }
+
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .header {
+        position: relative;
+        z-index: 1;
+    }
+    .header--opner .header__list{
+        display: block;
+    }
+    .header__list {
+        position: absolute;
+        z-index: 2;
+        left: 0px;
+        right: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 600px;
+        flex-direction: column;
+        display:none;
+        top: 100px;
+
+
+    }
+
+    .header__hamburger {
+        display: block;
+    }
+
+
 
 
 }
