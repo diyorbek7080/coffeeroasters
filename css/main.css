@@ -1110,19 +1110,16 @@ img {
 
 .quality__foto {
   position: absolute;
-  width: 445px;
-  height: 474px;
+  max-width: 445px;
+  max-height: 474px;
   bottom: 88px;
   left: 750px;
 }
 
 .quality__pay {
   width: 540px;
-  margin-top: 200px;
+  padding: 88px 0px 176px 85px;
   border-radius: 10px;
-  padding-top: 100px;
-  padding-left: 85px;
-  padding-bottom: 176px;
 }
 
 .quality__heading {
@@ -1144,12 +1141,24 @@ img {
   opacity: 0.8;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1250px) {
+  .quality {
+    width: 100%;
+    max-width: 1320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .quality__foto {
-    width: 445px;
-    height: 474px;
-    bottom: 88px;
-    left: 550px;
+    max-width: 445px;
+    max-height: 474px;
+    top: -110px;
+    left: 750px;
+  }
+  .quality__pay {
+    width: 100%;
+    max-width: 540px;
+    margin: 0;
   }
 }
 
